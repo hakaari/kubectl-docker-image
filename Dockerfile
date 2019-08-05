@@ -7,5 +7,3 @@ RUN apk add --update ca-certificates \
     && mv ./kubectl /usr/local/bin/kubectl \
     && apk del --purge deps \
     && rm /var/cache/apk/*
-
-ENTRYPOINT ["kubectl"]
